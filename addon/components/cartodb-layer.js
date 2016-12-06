@@ -44,7 +44,6 @@ export default BaseLayer.extend({
     
     if(typeof SQL === 'object') {
       SQL.forEach((el, index) => {
-        console.log(el,index);
         this.layer.getSubLayer(index).setSQL(el);
       });
     } else {
