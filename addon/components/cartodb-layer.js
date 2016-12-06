@@ -41,7 +41,15 @@ export default BaseLayer.extend({
   setSql: observer('sql', function() {
     let SQL = this.get('sql');
     let index = this.get('layerIndex') || 0;
-    this.layer.getSubLayer(index).setSQL(SQL);
+    
+    if(typeof SQL === 'object') {
+      SQL.forEach((el, index) => {
+        console.log(el,index);
+        this.layer.getSubLayer(index).setSQL(el);
+      });
+    } else {
+      this.layer.getSubLayer(index).setSQL(SQL);  
+    }
   }),
 
   layerTeardown() {
