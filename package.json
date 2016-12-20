@@ -35,6 +35,7 @@
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-export-application-global": "^1.0.5",
     "ember-leaflet": "2.2.7",
+    "ember-leaflet-tiles-cache": "0.1.1",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
     "ember-try": "^0.2.2",
@@ -55,6 +56,7 @@
     "configPath": "tests/dummy/config",
     "demoURL": "http://knownasilya.github.io/ember-leaflet-cartodb/",
     "after": [
+      "ember-leaflet-tiles-cache",
       "ember-leaflet"
     ]
   }
