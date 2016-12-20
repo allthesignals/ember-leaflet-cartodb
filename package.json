@@ -56,8 +56,8 @@
     "configPath": "tests/dummy/config",
     "demoURL": "http://knownasilya.github.io/ember-leaflet-cartodb/",
     "after": [
-      "ember-leaflet-tiles-cache",
-      "ember-leaflet"
+      "ember-leaflet",
+      "ember-leaflet-tiles-cache"
     ]
   }
 }
