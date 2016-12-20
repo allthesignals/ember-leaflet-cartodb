@@ -13,7 +13,10 @@ module.exports = {
     }
 
     this.app = target;
-
+    app.import(
+      app.bowerDirectory +
+        '/Leaflet.TileLayer.PouchDBCached/L.TileLayer.PouchDBCached.js'
+    );
     target.import('vendor/ember-leaflet-cartodb/cartodb_noleaflet.js');
     target.import('vendor/ember-leaflet-cartodb/cartodb.css');
 
